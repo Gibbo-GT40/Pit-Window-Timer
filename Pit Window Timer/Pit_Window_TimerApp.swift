@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Pit_Window_TimerApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+   var body: some Scene {
+      WindowGroup {
+         ContentView()
+         //StopwatchView()
+         //StopWatchManagerView()
+      }
+   }
 }
