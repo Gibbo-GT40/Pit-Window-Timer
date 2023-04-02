@@ -66,7 +66,7 @@ struct ContentView: View {
                   if race.window3Open > stopwatch.raceSeconds{
                      Text("Window 3 opens in \(getTime(seconds: race.window3Open - stopwatch.raceSeconds))")
                         .listRowBackground(Color.orange)
-                  } else if race.window1Range.contains(stopwatch.raceSeconds){
+                  } else if race.window3Range.contains(stopwatch.raceSeconds){
                      Text("Window 3 Closes in \(getTime(seconds: race.window3Close - stopwatch.raceSeconds))")
                         .listRowBackground(Color.green)
                   } else {

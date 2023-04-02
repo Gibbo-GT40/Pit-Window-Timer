@@ -26,8 +26,6 @@ struct RaceDetailsView: View {
                .foregroundColor(.orange)
             Text("Nothing to see just yet!")
                .font(.title)
-            //Text("\(race.window1Close)")
-            TextField("Profile name", text: String($race.raceLength))
             
             
             Spacer()

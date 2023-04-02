@@ -42,6 +42,6 @@ class RaceDetails: ObservableObject {
    var window5Range: ClosedRange<Int> { window5Open...window5Close }
    
    
-   var
+   
    
 }
