@@ -1,5 +1,5 @@
 //
-//  Extensions.swift
+//  Helpers.swift
 //  Pit Window Timer
 //
 //  Created by Anthony Gibson on 24/03/2023.
@@ -7,25 +7,7 @@
 
 import SwiftUI
 
-let window1Open: Int = 2 * 60
-let window1Close: Int = 20 * 60
-let window1Range = window1Open...window1Close
-
-let window2Open: Int = 25 * 60
-let window2Close: Int = 45 * 60
-let window2Range = window2Open...window2Close
-
-let window3Open: Int = 50 * 60
-let window3Close: Int = 70 * 60
-let window3Range = window3Open...window3Close
-
-let window4Open: Int = 75 * 60
-let window4Close: Int = 95 * 60
-let window4Range = window4Open...window4Close
-
-let window5Open: Int = 100  * 60
-let window5Close: Int = 115 * 60
-let window5Range = window5Open...window5Close
+let feedback = UIImpactFeedbackGenerator(style: .heavy)
 
 func getTime(seconds: Int) -> String {
    let hrsLeft = seconds / 3600

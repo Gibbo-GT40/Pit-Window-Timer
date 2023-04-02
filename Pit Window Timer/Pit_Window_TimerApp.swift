@@ -12,6 +12,8 @@ struct Pit_Window_TimerApp: App {
    var body: some Scene {
       WindowGroup {
          ContentView()
+            .environmentObject(StopwatchManager())
+            .environmentObject(RaceDetails())
          //StopwatchView()
          //StopWatchManagerView()
       }

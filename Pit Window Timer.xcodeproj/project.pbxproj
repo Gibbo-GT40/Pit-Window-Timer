@@ -8,31 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		922661D729CF53600042D242 /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922661D629CF53600042D242 /* StopWatchManager.swift */; };
-		922661D929CF53880042D242 /* StopWatchManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922661D829CF53880042D242 /* StopWatchManagerView.swift */; };
-		922661DC29D09BE40042D242 /* PitWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922661DB29D09BE40042D242 /* PitWindow.swift */; };
+		922661DE29D0A4D60042D242 /* RaceTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922661DD29D0A4D60042D242 /* RaceTimeView.swift */; };
+		922661E229D0B3620042D242 /* ButtonStartStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922661E129D0B3620042D242 /* ButtonStartStopView.swift */; };
+		922661E429D0B5DE0042D242 /* ButtonReset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922661E329D0B5DE0042D242 /* ButtonReset.swift */; };
 		9226CFC429CE37C80018C6DC /* Pit_Window_TimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9226CFC329CE37C80018C6DC /* Pit_Window_TimerApp.swift */; };
 		9226CFC629CE37C80018C6DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9226CFC529CE37C80018C6DC /* ContentView.swift */; };
 		9226CFC829CE37CB0018C6DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9226CFC729CE37CB0018C6DC /* Assets.xcassets */; };
 		9226CFCB29CE37CB0018C6DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9226CFCA29CE37CB0018C6DC /* Preview Assets.xcassets */; };
+		927C46F929D8BC9F0048A660 /* RaceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C46F829D8BC9F0048A660 /* RaceDetails.swift */; };
+		927C46FF29D97D000048A660 /* RaceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C46FE29D97D000048A660 /* RaceDetailsView.swift */; };
 		928A98A929CE4FDF004B24FA /* StopwatchUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A98A829CE4FDF004B24FA /* StopwatchUnit.swift */; };
-		928A98AB29CE569E004B24FA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A98AA29CE569E004B24FA /* Extensions.swift */; };
-		928A98AF29CE836D004B24FA /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A98AE29CE836D004B24FA /* StopWatch.swift */; };
-		928A98B129CE8417004B24FA /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A98B029CE8417004B24FA /* StopwatchView.swift */; };
+		928A98AB29CE569E004B24FA /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A98AA29CE569E004B24FA /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		922661D629CF53600042D242 /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
-		922661D829CF53880042D242 /* StopWatchManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManagerView.swift; sourceTree = "<group>"; };
-		922661DB29D09BE40042D242 /* PitWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitWindow.swift; sourceTree = "<group>"; };
+		922661DD29D0A4D60042D242 /* RaceTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTimeView.swift; sourceTree = "<group>"; };
+		922661E129D0B3620042D242 /* ButtonStartStopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStartStopView.swift; sourceTree = "<group>"; };
+		922661E329D0B5DE0042D242 /* ButtonReset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonReset.swift; sourceTree = "<group>"; };
 		9226CFC029CE37C80018C6DC /* Pit Window Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pit Window Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9226CFC329CE37C80018C6DC /* Pit_Window_TimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pit_Window_TimerApp.swift; sourceTree = "<group>"; };
 		9226CFC529CE37C80018C6DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9226CFC729CE37CB0018C6DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9226CFCA29CE37CB0018C6DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		927C46F829D8BC9F0048A660 /* RaceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetails.swift; sourceTree = "<group>"; };
+		927C46FE29D97D000048A660 /* RaceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailsView.swift; sourceTree = "<group>"; };
 		928A98A829CE4FDF004B24FA /* StopwatchUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchUnit.swift; sourceTree = "<group>"; };
-		928A98AA29CE569E004B24FA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		928A98AE29CE836D004B24FA /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
-		928A98B029CE8417004B24FA /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
+		928A98AA29CE569E004B24FA /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,14 +48,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		922661DA29D09BCC0042D242 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				922661DB29D09BE40042D242 /* PitWindow.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		9226CFB729CE37C70018C6DC = {
 			isa = PBXGroup;
 			children = (
@@ -75,9 +69,8 @@
 			children = (
 				9226CFC329CE37C80018C6DC /* Pit_Window_TimerApp.swift */,
 				9226CFC529CE37C80018C6DC /* ContentView.swift */,
-				922661DA29D09BCC0042D242 /* Model */,
-				928A98A329CE4D47004B24FA /* Helpers */,
 				928A98A229CE4C9F004B24FA /* Views */,
+				928A98A329CE4D47004B24FA /* Utility */,
 				9226CFC729CE37CB0018C6DC /* Assets.xcassets */,
 				9226CFC929CE37CB0018C6DC /* Preview Content */,
 			);
@@ -96,20 +89,22 @@
 			isa = PBXGroup;
 			children = (
 				928A98A829CE4FDF004B24FA /* StopwatchUnit.swift */,
-				928A98B029CE8417004B24FA /* StopwatchView.swift */,
-				922661D829CF53880042D242 /* StopWatchManagerView.swift */,
+				922661DD29D0A4D60042D242 /* RaceTimeView.swift */,
+				922661E129D0B3620042D242 /* ButtonStartStopView.swift */,
+				922661E329D0B5DE0042D242 /* ButtonReset.swift */,
+				927C46FE29D97D000048A660 /* RaceDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		928A98A329CE4D47004B24FA /* Helpers */ = {
+		928A98A329CE4D47004B24FA /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				928A98AE29CE836D004B24FA /* StopWatch.swift */,
-				928A98AA29CE569E004B24FA /* Extensions.swift */,
+				928A98AA29CE569E004B24FA /* Helpers.swift */,
 				922661D629CF53600042D242 /* StopWatchManager.swift */,
+				927C46F829D8BC9F0048A660 /* RaceDetails.swift */,
 			);
-			path = Helpers;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,15 +177,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				922661D929CF53880042D242 /* StopWatchManagerView.swift in Sources */,
-				922661DC29D09BE40042D242 /* PitWindow.swift in Sources */,
-				928A98AB29CE569E004B24FA /* Extensions.swift in Sources */,
+				922661DE29D0A4D60042D242 /* RaceTimeView.swift in Sources */,
+				922661E429D0B5DE0042D242 /* ButtonReset.swift in Sources */,
+				928A98AB29CE569E004B24FA /* Helpers.swift in Sources */,
 				9226CFC629CE37C80018C6DC /* ContentView.swift in Sources */,
+				927C46FF29D97D000048A660 /* RaceDetailsView.swift in Sources */,
+				927C46F929D8BC9F0048A660 /* RaceDetails.swift in Sources */,
 				9226CFC429CE37C80018C6DC /* Pit_Window_TimerApp.swift in Sources */,
 				922661D729CF53600042D242 /* StopWatchManager.swift in Sources */,
-				928A98AF29CE836D004B24FA /* StopWatch.swift in Sources */,
 				928A98A929CE4FDF004B24FA /* StopwatchUnit.swift in Sources */,
-				928A98B129CE8417004B24FA /* StopwatchView.swift in Sources */,
+				922661E229D0B3620042D242 /* ButtonStartStopView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -301,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -317,7 +313,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pit Window Timer/Preview Content\"";
 				DEVELOPMENT_TEAM = V42DTSJ439;
 				ENABLE_PREVIEWS = YES;
@@ -325,13 +321,13 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.allgibbo.Pit-Window-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -346,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pit Window Timer/Preview Content\"";
 				DEVELOPMENT_TEAM = V42DTSJ439;
 				ENABLE_PREVIEWS = YES;
@@ -354,13 +350,13 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.allgibbo.Pit-Window-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

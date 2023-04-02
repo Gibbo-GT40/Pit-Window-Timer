@@ -45,7 +45,9 @@ struct StopwatchUnit: View {
 }
 
 struct StopwatchUnit_Previews: PreviewProvider {
-    static var previews: some View {
-       StopwatchUnit(timeUnit: 1, timeUnitText: "Hr", color: .red)
-    }
+   static var previews: some View {
+      StopwatchUnit(timeUnit: 1, timeUnitText: "sec", color: .red)
+         .previewLayout(.sizeThatFits)
+         .padding()
+   }
 }
