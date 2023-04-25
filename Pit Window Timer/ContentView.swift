@@ -4,19 +4,16 @@
 //
 //  Created by Anthony Gibson on 24/03/2023.
 //
-//
-//  Stopwatch.swift
-//  StandApp
-//
-//  Created by Serafín Ennes Moscoso on 28/04/2021.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+   @Environment (\.managedObjectContext) private var viewContext
    
    @EnvironmentObject var stopwatch: StopwatchManager
-   @EnvironmentObject var race: RaceDetails
+   
+   @FetchRequest(entity: Window.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Window.startMinuteString, ascending: true)])
+   private var windows: FetchedResults<Window>
+   
    
    /// Increase progressTime each second
    @State private var timer: Timer?
@@ -28,79 +25,42 @@ struct ContentView: View {
    var body: some View {
       NavigationView {
          VStack(spacing: 3) {
-//            Text("Pit Window Timer")
-//               .font(.largeTitle)
-//               .fontWeight(.bold)
+            HStack {
+               Text("Race Time")
+                  .font(.title)
+                  .padding(.leading,20)
+               Spacer()
+            }
+            RaceTimeView()
+               .padding(.bottom, 10)
+            
             List {
-               Section(header: Text("Race Time")) {
-                  RaceTimeView()
-               }
-               
-               Section(header: Text("Pit Window 1")) {
-                  if race.window1Open > stopwatch.raceSeconds {
-                     Text("Window 1 opens in \(getTime(seconds: race.window1Open - stopwatch.raceSeconds))")
-                        .listRowBackground(Color.orange)
-                  } else if race.window1Range.contains(stopwatch.raceSeconds){
-                     Text("Window 1 Closes in \(getTime(seconds: race.window1Close - stopwatch.raceSeconds))")
-                        .listRowBackground(Color.green)
-                  } else {
-                     Text("Pit window 1 is Closed")
-                        .listRowBackground(Color.red)
+               if windows.count == 0 {
+                  Text ("Please add at least\none Pit Window")
+                     .padding(.leading, 50)
+                     .multilineTextAlignment(.center)
+                     .font(
+                        .system(size: 25)
+                        .weight(.semibold)
+                        
+                     )
+               } else {
+                  ForEach(windows.sorted { $0.startMinute < $1.startMinute}) { window in
+                     Section(header: Text(window.name ?? "default name")) {
+                        if window.startSecond > stopwatch.raceSeconds {
+                           Text("Window opens in \(getTime(seconds: Int(window.startSecond) - stopwatch.raceSeconds))")
+                              .listRowBackground(Color.orange)
+                        } else if window.openRange.contains(Int16(stopwatch.raceSeconds)) {
+                           Text("Window Closes in \(getTime(seconds: (Int(window.startSecond) + Int(window.durationSeconds)) - stopwatch.raceSeconds))")
+                              .listRowBackground(Color.green)
+                        } else {
+                           Text("Pit window 2 is Closed")
+                              .listRowBackground(Color.red)
+                        }
+                     }
+                     .listRowInsets(EdgeInsets(top: 0,leading: 20,bottom: 0,trailing: 20))
                   }
                }
-               .listRowInsets(EdgeInsets(top: 0,leading: 20,bottom: 0,trailing: 20))
-               Section(header: Text("Pit Window 2")) {
-                  if race.window2Open > stopwatch.raceSeconds {
-                     Text("Window 2 opens in \(getTime(seconds: race.window2Open - stopwatch.raceSeconds))")
-                        .listRowBackground(Color.orange)
-                  } else if race.window2Range.contains(stopwatch.raceSeconds){
-                     Text("Window 2 Closes in \(getTime(seconds: race.window2Close - stopwatch.raceSeconds))")
-                        .listRowBackground(Color.green)
-                  } else {
-                     Text("Pit window 2 is Closed")
-                        .listRowBackground(Color.red)
-                  }
-               }
-               .listRowInsets(EdgeInsets(top: 0,leading: 20,bottom: 0,trailing: 20))
-               Section(header: Text("Pit Window 3")) {
-                  if race.window3Open > stopwatch.raceSeconds{
-                     Text("Window 3 opens in \(getTime(seconds: race.window3Open - stopwatch.raceSeconds))")
-                        .listRowBackground(Color.orange)
-                  } else if race.window3Range.contains(stopwatch.raceSeconds){
-                     Text("Window 3 Closes in \(getTime(seconds: race.window3Close - stopwatch.raceSeconds))")
-                        .listRowBackground(Color.green)
-                  } else {
-                     Text("Pit window 3 is Closed")
-                        .listRowBackground(Color.red)
-                  }
-               }
-               .listRowInsets(EdgeInsets(top: 0,leading: 20,bottom: 0,trailing: 20))
-               Section(header: Text("Pit Window 4")) {
-                  if race.window4Open > stopwatch.raceSeconds {
-                     Text("Window 4 opens in \(getTime(seconds: race.window4Open - stopwatch.raceSeconds))")
-                        .listRowBackground(Color.orange)
-                  } else if race.window4Range.contains(stopwatch.raceSeconds){
-                     Text("Window 4 Closes in \(getTime(seconds: race.window4Close - stopwatch.raceSeconds))")
-                        .listRowBackground(Color.green)
-                  } else {
-                     Text("Pit window 4 is Closed")
-                        .listRowBackground(Color.red)
-                  }
-               }
-               .listRowInsets(EdgeInsets(top: 0,leading: 20,bottom: 0,trailing: 20))
-               Section(header: Text("Pit Window 5")) {
-                  if race.window5Open > stopwatch.raceSeconds {
-                     Text("Window 5 opens in \(getTime(seconds: race.window5Open - stopwatch.raceSeconds))")
-                        .listRowBackground(Color.orange)
-                  } else if race.window5Range.contains(stopwatch.raceSeconds){
-                     Text("Window 5 Closes in \(getTime(seconds: race.window5Close - stopwatch.raceSeconds))")
-                        .listRowBackground(Color.green)
-                  } else {
-                     Text("Pit window 5 is Closed")
-                        .listRowBackground(Color.red)
-                  }
-               }
-               .listRowInsets(EdgeInsets(top: 0,leading: 20,bottom: 0,trailing: 20))
             }
             Spacer()
          }
@@ -126,7 +86,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
    static var previews: some View {
       ContentView()
+         .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
          .environmentObject(StopwatchManager())
-         .environmentObject(RaceDetails())
    }
 }

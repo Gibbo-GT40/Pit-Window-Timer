@@ -9,13 +9,18 @@ import SwiftUI
 
 @main
 struct Pit_Window_TimerApp: App {
+   
+   let persistenceController = PersistenceController.shared
+   @Environment(\.scenePhase) var scenePhase
+   
    var body: some Scene {
       WindowGroup {
          ContentView()
+            .environment(\.managedObjectContext, persistenceController.container.viewContext)
             .environmentObject(StopwatchManager())
-            .environmentObject(RaceDetails())
-         //StopwatchView()
-         //StopWatchManagerView()
+      }
+      .onChange(of: scenePhase) { _ in
+         persistenceController.save()
       }
    }
 }

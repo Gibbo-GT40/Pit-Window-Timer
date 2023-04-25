@@ -17,8 +17,16 @@
 		9226CFCB29CE37CB0018C6DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9226CFCA29CE37CB0018C6DC /* Preview Assets.xcassets */; };
 		927C46F929D8BC9F0048A660 /* RaceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C46F829D8BC9F0048A660 /* RaceDetails.swift */; };
 		927C46FF29D97D000048A660 /* RaceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C46FE29D97D000048A660 /* RaceDetailsView.swift */; };
+		928A874829ED893B001365E9 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A874729ED893B001365E9 /* PersistenceController.swift */; };
+		928A875329ED8B75001365E9 /* PitWindow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 928A875129ED8B75001365E9 /* PitWindow.xcdatamodeld */; };
+		928A875A29EDA9A7001365E9 /* Window+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A875829EDA9A7001365E9 /* Window+CoreDataClass.swift */; };
+		928A875B29EDA9A7001365E9 /* Window+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A875929EDA9A7001365E9 /* Window+CoreDataProperties.swift */; };
 		928A98A929CE4FDF004B24FA /* StopwatchUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A98A829CE4FDF004B24FA /* StopwatchUnit.swift */; };
 		928A98AB29CE569E004B24FA /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A98AA29CE569E004B24FA /* Helpers.swift */; };
+		92AD18602AD0265E00E24CB2 /* PitWindowEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD185F2AD0265E00E24CB2 /* PitWindowEditView.swift */; };
+		92AD18622AD02A4100E24CB2 /* Window+PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD18612AD02A4100E24CB2 /* Window+PreviewProvider.swift */; };
+		92B607E229DAAEA2006CF473 /* HourMinutePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B607E129DAAEA2006CF473 /* HourMinutePickerView.swift */; };
+		92E69C122B261C6700B30469 /* PitWindowAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E69C112B261C6700B30469 /* PitWindowAddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +41,16 @@
 		9226CFCA29CE37CB0018C6DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		927C46F829D8BC9F0048A660 /* RaceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetails.swift; sourceTree = "<group>"; };
 		927C46FE29D97D000048A660 /* RaceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailsView.swift; sourceTree = "<group>"; };
+		928A874729ED893B001365E9 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		928A875229ED8B75001365E9 /* PitWindow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PitWindow.xcdatamodel; sourceTree = "<group>"; };
+		928A875829EDA9A7001365E9 /* Window+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Window+CoreDataClass.swift"; path = "Pit Window Timer/Models/Window/Window+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		928A875929EDA9A7001365E9 /* Window+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Window+CoreDataProperties.swift"; path = "Pit Window Timer/Models/Window/Window+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		928A98A829CE4FDF004B24FA /* StopwatchUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchUnit.swift; sourceTree = "<group>"; };
 		928A98AA29CE569E004B24FA /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		92AD185F2AD0265E00E24CB2 /* PitWindowEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitWindowEditView.swift; sourceTree = "<group>"; };
+		92AD18612AD02A4100E24CB2 /* Window+PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Window+PreviewProvider.swift"; sourceTree = "<group>"; };
+		92B607E129DAAEA2006CF473 /* HourMinutePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMinutePickerView.swift; sourceTree = "<group>"; };
+		92E69C112B261C6700B30469 /* PitWindowAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitWindowAddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +85,7 @@
 			children = (
 				9226CFC329CE37C80018C6DC /* Pit_Window_TimerApp.swift */,
 				9226CFC529CE37C80018C6DC /* ContentView.swift */,
+				928A874329ED8871001365E9 /* Models */,
 				928A98A229CE4C9F004B24FA /* Views */,
 				928A98A329CE4D47004B24FA /* Utility */,
 				9226CFC729CE37CB0018C6DC /* Assets.xcassets */,
@@ -85,14 +102,37 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		928A874329ED8871001365E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				928A875129ED8B75001365E9 /* PitWindow.xcdatamodeld */,
+				928A874729ED893B001365E9 /* PersistenceController.swift */,
+				928A875C29EDA9EF001365E9 /* Window */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		928A875C29EDA9EF001365E9 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				928A875829EDA9A7001365E9 /* Window+CoreDataClass.swift */,
+				928A875929EDA9A7001365E9 /* Window+CoreDataProperties.swift */,
+				92AD18612AD02A4100E24CB2 /* Window+PreviewProvider.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
 		928A98A229CE4C9F004B24FA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				928A98A829CE4FDF004B24FA /* StopwatchUnit.swift */,
 				922661DD29D0A4D60042D242 /* RaceTimeView.swift */,
+				928A98A829CE4FDF004B24FA /* StopwatchUnit.swift */,
 				922661E129D0B3620042D242 /* ButtonStartStopView.swift */,
 				922661E329D0B5DE0042D242 /* ButtonReset.swift */,
 				927C46FE29D97D000048A660 /* RaceDetailsView.swift */,
+				92AD185F2AD0265E00E24CB2 /* PitWindowEditView.swift */,
+				92E69C112B261C6700B30469 /* PitWindowAddView.swift */,
+				92B607E129DAAEA2006CF473 /* HourMinutePickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,7 +175,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					9226CFBF29CE37C70018C6DC = {
 						CreatedOnToolsVersion = 14.2;
@@ -177,15 +217,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				928A875A29EDA9A7001365E9 /* Window+CoreDataClass.swift in Sources */,
+				928A874829ED893B001365E9 /* PersistenceController.swift in Sources */,
+				92E69C122B261C6700B30469 /* PitWindowAddView.swift in Sources */,
 				922661DE29D0A4D60042D242 /* RaceTimeView.swift in Sources */,
 				922661E429D0B5DE0042D242 /* ButtonReset.swift in Sources */,
 				928A98AB29CE569E004B24FA /* Helpers.swift in Sources */,
+				92AD18602AD0265E00E24CB2 /* PitWindowEditView.swift in Sources */,
 				9226CFC629CE37C80018C6DC /* ContentView.swift in Sources */,
 				927C46FF29D97D000048A660 /* RaceDetailsView.swift in Sources */,
 				927C46F929D8BC9F0048A660 /* RaceDetails.swift in Sources */,
 				9226CFC429CE37C80018C6DC /* Pit_Window_TimerApp.swift in Sources */,
 				922661D729CF53600042D242 /* StopWatchManager.swift in Sources */,
 				928A98A929CE4FDF004B24FA /* StopwatchUnit.swift in Sources */,
+				92AD18622AD02A4100E24CB2 /* Window+PreviewProvider.swift in Sources */,
+				928A875329ED8B75001365E9 /* PitWindow.xcdatamodeld in Sources */,
+				928A875B29EDA9A7001365E9 /* Window+CoreDataProperties.swift in Sources */,
+				92B607E229DAAEA2006CF473 /* HourMinutePickerView.swift in Sources */,
 				922661E229D0B3620042D242 /* ButtonStartStopView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +277,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -289,6 +338,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -313,7 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"Pit Window Timer/Preview Content\"";
 				DEVELOPMENT_TEAM = V42DTSJ439;
 				ENABLE_PREVIEWS = YES;
@@ -323,11 +373,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.allgibbo.Pit-Window-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -342,7 +393,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"Pit Window Timer/Preview Content\"";
 				DEVELOPMENT_TEAM = V42DTSJ439;
 				ENABLE_PREVIEWS = YES;
@@ -352,11 +403,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.allgibbo.Pit-Window-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -387,6 +439,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		928A875129ED8B75001365E9 /* PitWindow.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				928A875229ED8B75001365E9 /* PitWindow.xcdatamodel */,
+			);
+			currentVersion = 928A875229ED8B75001365E9 /* PitWindow.xcdatamodel */;
+			path = PitWindow.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9226CFB829CE37C70018C6DC /* Project object */;
 }

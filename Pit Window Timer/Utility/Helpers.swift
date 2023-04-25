@@ -21,11 +21,18 @@ func getTime(seconds: Int) -> String {
    return (hrsLeftStr + ":" + minLeftStr + ":" + secLeftStr)
 }
 
+// helper function for updating textfiled where the original data is from CoreData
 func ??<T>(lhs: Binding<Optional<T>>, rhs: T) -> Binding<T> {
    Binding(
       get: { lhs.wrappedValue ?? rhs },
       set: { lhs.wrappedValue = $0 }
    )
+}
+
+extension UIPickerView {
+   open override var intrinsicContentSize: CGSize {
+      return CGSize(width: UIView.noIntrinsicMetric, height: 160)
+   }
 }
 
 extension String {
@@ -34,4 +41,6 @@ extension String {
       return String(arrayString[index])
    }
 }
+
+
 
